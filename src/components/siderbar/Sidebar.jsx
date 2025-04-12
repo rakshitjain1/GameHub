@@ -4,7 +4,7 @@ import { fetchGenres, fetchTags } from "../../services/rawgApi";
 import { setFilters } from "../../features/filtersSlice";
 import { setFilters as setGameFilters, getGames } from "../../features/gameSlice";
 import { MultiSelect } from "react-multi-select-component";
-import "./Sidebar.css";
+import "./sidebar.css";
 
 const Sidebar = () => {
   const dispatch = useDispatch();
