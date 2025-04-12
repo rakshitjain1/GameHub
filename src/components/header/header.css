@@ -1,0 +1,196 @@
+/* src/components/header.css */
+*{
+  margin: 0;
+  padding: 0;
+}
+.header {
+  position: fixed; /* Ensure header stays at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #1f1f2e;
+  border-bottom: 1px solid #444;
+  height: 35px; /* Set fixed height */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #2d2d44;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    flex: 1;
+    margin: 0 1rem;
+    max-width: 400px;
+  }
+  
+  .search-bar input {
+    background: transparent;
+    border: none;
+    color: white;
+    margin-left: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .search-icon {
+    color: #aaa;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+  }
+  
+  .filters select,
+  .filters input[type="number"] {
+    padding: 0.4rem 0.8rem;
+    background-color: #2d2d44;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 6px;
+    outline: none;
+  }
+  
+  .filters label {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+  }
+  
+  .apply-btn {
+    background-color: #61dafb;
+    color: #1f1f2e;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+  }
+  
+  .apply-btn:hover {
+    background-color: #52c0e3;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .icon-btn {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .login-btn {
+    background-color: #61dafb;
+    color: #1f1f2e;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .user-icon {
+    margin-right: 0.5rem;
+  }
+
+  @media (max-width: 1024px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .search-bar {
+      margin: 1rem 0;
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .filters {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-icons {
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      font-size: 1.2rem;
+    }
+  
+    .search-bar input {
+      font-size: 0.9rem;
+    }
+  
+    .filters label {
+      font-size: 0.85rem;
+    }
+  
+    .apply-btn, .login-btn {
+      font-size: 0.85rem;
+      padding: 0.3rem 0.6rem;
+    }
+  
+    .filters select,
+    .filters input[type="number"] {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      padding: 0.5rem 1rem;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.5rem;
+    }
+  
+    .search-bar input {
+      margin-left: 0;
+    }
+  
+    .nav-icons {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  
+    .login-btn {
+      font-size: 0.8rem;
+      padding: 0.3rem 0.5rem;
+    }
+  }
+  
+  

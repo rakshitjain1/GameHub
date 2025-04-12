@@ -1,0 +1,40 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .layout-body {
+    display: flex;
+    flex: 1;
+  }
+  
+  .content-area {
+    flex: 1;
+    margin-left: 300px; /* Same as sidebar width */
+    margin-top:67px; /* Same as header height */
+    padding: 1.5rem;
+    background-color: #1c1c2e;
+    color: #fff;
+}
+
+ /* Tablet screens (≤ 768px) */
+@media (max-width: 768px) {
+  .layout-body {
+    flex-direction: column;
+  }
+
+  .content-area {
+    margin-left: 0; /* Remove sidebar space */
+    margin-top: 0; /* Header still on top */
+    padding: 1rem;
+  }
+}
+
+/* Mobile screens (≤ 480px) */
+@media (max-width: 480px) {
+  .content-area {
+    padding: 0.8rem;
+    margin-top: 0;
+  }
+}

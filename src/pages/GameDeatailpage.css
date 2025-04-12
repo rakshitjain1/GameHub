@@ -1,0 +1,169 @@
+/* Container */
+.game-detail-container {
+    max-width: calc(100% - 264px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+  
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+  
+  /* Card */
+  .game-detail-card {
+    width: 100%;
+    max-width: 1000px;
+    background: #2d2d44;
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Title */
+  .game-title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #61dafb;
+    text-align: center;
+  }
+  
+  /* Banner */
+  .game-banner {
+    width: 100%;
+    max-height: 520px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Description */
+  .game-description {
+    font-size: 1.1rem;
+    color: #61dafb;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+  }
+  
+  /* Sections */
+  .game-section {
+    margin-bottom: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #61dafb;
+    border-left: 4px solid #6366f1;
+    padding-left: 0.75rem;
+  }
+  
+  .section-content {
+    font-size: 1rem;
+    color: #61dafb;
+  }
+  
+  /* Screenshots */
+  .screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+  }
+  
+  .screenshot-box {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s ease;
+  }
+  
+  .screenshot-box:hover {
+    transform: scale(1.02);
+  }
+  
+  .screenshot {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Platform requirements */
+  .platform-name {
+    font-weight: 600;
+    margin-top: 0.75rem;
+    color: #0f172a;
+  }
+  
+  .requirements {
+    font-size: 0.95rem;
+    color: #61dafb;
+    margin-left: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  @media (max-width: 768px) {
+    .game-detail-container {
+      padding: 1.2rem;
+      max-width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .game-detail-card {
+      padding: 1.5rem;
+    }
+  
+    .game-title {
+      font-size: 2rem;
+    }
+  
+    .game-banner {
+      max-height: 300px;
+      border-radius: 8px;
+    }
+  
+    .game-description {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  
+    .section-title {
+      font-size: 1.3rem;
+    }
+  
+    .section-content {
+      font-size: 0.95rem;
+    }
+  
+    .screenshots-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .requirements {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .game-title {
+      font-size: 1.7rem;
+    }
+  
+    .game-detail-card {
+      padding: 1rem;
+    }
+  
+    .game-banner {
+      max-height: 220px;
+    }
+  
+    .game-description,
+    .section-content,
+    .requirements {
+      font-size: 0.9rem;
+    }
+  }
+  
