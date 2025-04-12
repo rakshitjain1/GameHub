@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import GameCard from '../components/card/GameCard';
 import { getGames, setPage } from '../features/gameSlice';
-import "../components/Gamelist/GameList.css";
+import "../components/Gamelist/Gamelist.css";
 
 const Home = () => {
   const dispatch = useDispatch();
